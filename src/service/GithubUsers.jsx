@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './GithubUsers.css';
 
 function GithubUsers() {
 
@@ -18,8 +19,8 @@ function GithubUsers() {
   return (
     <section className='container-fluid'>
       <section className='row text-center' style={{ backgroundColor: "currentColor" }}>
-        <section className='p-4'>
-          <ul className='d-flex col-4 flex-row justify-content-between' style={{ listStyle: "none", textDecoration: "none" }}>
+        <section className='p-4 personal'>
+          <ul className='d-flex col-4 flex-row justify-content-between personal__details' style={{ listStyle: "none", textDecoration: "none" }}>
             <li><a href="https://bhuwancodes.netlify.app/" target="_blank" rel="noopener noreferrer">Contact Me</a></li>
             <li><a href="https://github.com/bhuwanpandey7" target="_blank" rel="noopener noreferrer">Github</a></li>
             <li><a href="https://medium.com/@bp-pandey7" target="_blank" rel="noopener noreferrer">Medium</a></li>
@@ -31,7 +32,7 @@ function GithubUsers() {
           userData.map(user => {
             return (
               <section key={user.id} className='col-10 col-md-3 mt-4'>
-                <article className='card p-2' style={{ backgroundColor: "antiquewhite", width: "295px", padding: "1rem" }}>
+                <section className='card p-2 userData' style={{ backgroundColor: "antiquewhite", width: "295px", padding: "1rem" }}>
                   <section className="d-flex align-items center" style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
                     <section className="d-flex image">
                       <section className='d-flex flex-column'>
@@ -57,7 +58,7 @@ function GithubUsers() {
                       </section>
                     </section>
                   </section>
-                </article>
+                </section>
               </section>
             );
           })

@@ -1,0 +1,11 @@
+/* Small Devices */
+@media screen and (max-width: 900px) {
+    .personal {
+        display: none;
+    }
+
+    .userData {
+        display: flex;
+        flex-direction: column;
+    }
+}
