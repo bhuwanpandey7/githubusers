@@ -1,38 +1,78 @@
-.App {
+body {
+  background-color: black;
+  border-radius: 10px;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+h2 {
   text-align: center;
+  margin: 20px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.textLeft {
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.loadingDiv {
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card {
+  width: 450px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.image {
+  min-width: 155px;
+  margin-right: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stats {
+  background: #f2f5f8 !important;
+  color: #000 !important;
+}
+
+.articles {
+  font-size: 10px;
+  color: #a1aab9;
+}
+
+.first {
+  font-weight: 500;
+}
+
+.profile {
+  white-space: nowrap;
+  width: 80px;
+  overflow: hidden;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+}
+
+.followers {
+  font-size: 10px;
+  color: #a1aab9;
+}
+
+.second {
+  font-weight: 500;
+}
+
+.rating {
+  font-size: 10px;
+  color: #a1aab9;
+}
+
+.third {
+  font-weight: 500;
+}
+
+section>ul>li a {
+  text-decoration: none;
 }
